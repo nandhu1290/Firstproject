@@ -1,0 +1,13 @@
+.container{
+    margin-top: 75px;
+
+}
+.card{
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.2);
+    
+    z-index: 1;
+    background-color: aqua;
+}

@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+<marquee behavior="" direction="" style="color:antiquewhite; background-color:black">E-Learnig , Improove your skills , contact : 9074976692,Believe Your POwer</marquee>
+<h1 style="text-align: center;">E-Learning</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="text-align:center;">
+            <img src="{% static 'images/image1.jpg' %} " style="width: 80%;;"alt="">
+        </div>
+        
+        <div class="col-md-6" style="text-align: right;">
+            <img src="" alt="">
+            <p style="margin-top:60px;">E-learning is a method of obtaining knowledge through digital or, web-enabled gadgets like computers, laptops, tablets, or smartphones. The technique of online learning or e-learning enables remote access to systematic learning or any desired course through a digital device aided by stable internet connectivity. </p>  
+    </div>
+</div>
+
+<div class="container">
+    <h1 style="text-align: center;">Features</h1>
+    <div class="row" style="margin-top:50px;">
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <i class="bi bi-browser-chrome display-1 text-center" style="color:rgb(7, 3, 3);"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Web-Based Business Support</h5>
+                  <p class="card-text">One of the LMS highlights eLearning organizations should search for is eCommerce coordination, which enables you to market your eLearning courses. This might be done in installment portals, virtual shopping baskets, or item URLs. </p>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <i class="bi bi-people-fill display-1 text-center" style="color: rgb(28, 28, 224);"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center"> Brand Integration</h5>
+                  <p class="card-text">It's basic that your new LMS enables you to redo eLearning layouts and has different advantages to pass on your image informing. This guarantees coherence, cohesiveness, and validity. Accordingly, you fabricate brand dedication and grow your online student client base.
+
+                  </p>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <i class="bi bi-hand-index-thumb-fill display-1 text-center" style="color: rgb(3, 3, 8);"></i>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Self Registration</h5>
+                  <p class="card-text">Online students examine your online course inventory and locate the perfect eLearning course for their requirements. In any case, how would they book their spot and pay their educational cost? Your LMS ought to have a self-enlistment or auto-select element, where online students can join self-governing.</p>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
+<h1 style="text-align: center;">Domains</h1>
+<div class="container">
+    <div class="row">
+        {% for i in res %}
+    <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+            <i class="bi bi-filetype-py display-1 text-center" style="color: rgb(255, 0, 34);"></i>
+            <div class="card-body">
+              <h5 class="card-title">{{i.D_name}}</h5>
+              <p class="card-text">{{i.D_desc}}</p>
+             
+            </div>
+          </div>
+    </div>
+    {%endfor%}
+    </div>
+</div>
+
+{% endblock%}
+
+
+
+
+

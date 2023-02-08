@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+login
+{% endblock%}
+
+{% block content %}
+
+<h1 style="text-align: center; color:darkred; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-decoration:underline; text-decoration-color: rgb(0, 0, 8);">Login Form</h1>
+
+<form action="login" method="post"> 
+    {% csrf_token %}
+    <div class="container">
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="">username :</label>
+                <input type ="text" name="username" class="form-control" placeholder="enter username">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="">password :</label>
+                <input type ="password" name="password" class="form-control" placeholder="enter password">
+            </div>
+        </div>
+        <a href="" class="btn btn-danger btn-block">Login</a>
+    </div>
+</form>
+
+
+{% endblock %}
+<h1>hy</h1>
